@@ -1,0 +1,12 @@
+{% extends 'base2.html' %}
+
+{% block body %}
+
+<h3>Confirm Delete Task</h3>
+<form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <button class="btn btn-danger" type="submit" >Delete</button>
+</form>
+
+{% endblock %}

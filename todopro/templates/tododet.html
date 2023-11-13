@@ -1,0 +1,29 @@
+{% extends 'base2.html' %}
+
+{% block body %}
+
+<h2>Detail1</h2>
+<!--<form  >-->
+    {% csrf_token %}
+
+    <div class="container">
+
+
+
+
+    <div class="row">
+        <div class="col-md-6">
+
+             {% for todo in todo_list  %}
+
+                <h2> {{ todo.name }} </h2>
+       <h4> {{ todo.priority }} </h4>
+
+     {% endfor %}
+
+
+   </div>
+        </div>
+        </div>
+<!--</form>-->
+{% endblock %}
